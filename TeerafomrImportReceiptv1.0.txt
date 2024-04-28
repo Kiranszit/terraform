@@ -1,0 +1,75 @@
+1. terraform import module.rgm1.azurerm_resource_group.rg1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecomm-rg
+
+2. terraform import module.vnetm1.azurerm_resource_group.vnetrg /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecommvnet-rg
+
+3. terraform import module.vnetm1.azurerm_virtual_network.vnet1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecommvnet-rg/providers/Microsoft.Network/virtualNetworks/azecommvnet 
+
+4. terraform import module.subnetm1.azurerm_subnet.subnet1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecommvnet-rg/providers/Microsoft.Network/virtualNetworks/azecommvnet/subnets/core
+
+5. terraform import module.subnetm2.azurerm_subnet.subnet1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecommvnet-rg/providers/Microsoft.Network/virtualNetworks/azecommvnet/subnets/application
+
+6. terraform import module.subnetm3.azurerm_subnet.subnet1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecommvnet-rg/providers/Microsoft.Network/virtualNetworks/azecommvnet/subnets/dmz
+
+7. terraform import module.subnetm4.azurerm_subnet.subnet1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecommvnet-rg/providers/Microsoft.Network/virtualNetworks/azecommvnet/subnets/data
+
+8. terraform import module.subnetm-bastion.azurerm_subnet.subnet1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecommvnet-rg/providers/Microsoft.Network/virtualNetworks/azecommvnet/subnets/AzureBastionSubnet
+
+9. terraform import module.nicm1.azurerm_network_interface.nic1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecomm-rg/providers/Microsoft.Network/networkInterfaces/azecommweb1-nic01
+
+10. terraform import module.nicm2.azurerm_network_interface.nic1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecomm-rg/providers/Microsoft.Network/networkInterfaces/azecommradmq1-nic01
+
+11. terraform import module.nicm3.azurerm_network_interface.nic1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecomm-rg/providers/Microsoft.Network/networkInterfaces/azecommpgdb1-nic01
+
+12. terraform import module.pipm1.azurerm_public_ip.public-ip1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecomm-rg/providers/Microsoft.Network/publicIPAddresses/azreceiptemea-publicip
+
+13. terraform import module.bastionhost.azurerm_bastion_host.bastion1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecomm-rg/providers/Microsoft.Network/bastionHosts/azreceiptemeabsh01
+
+14. terraform import module.vmm1.azurerm_linux_virtual_machine.vm1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecomm-rg/providers/Microsoft.Compute/virtualMachines/azecommweb1
+
+15. terraform import module.vmm2.azurerm_linux_virtual_machine.vm1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecomm-rg/providers/Microsoft.Compute/virtualMachines/azecommradmq1
+
+16. terraform import module.vmm3.azurerm_linux_virtual_machine.vm1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecomm-rg/providers/Microsoft.Compute/virtualMachines/azecommpgdb1
+
+
+
+17. terraform import module.diskm1.azurerm_managed_disk.disk1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecomm-rg/providers/Microsoft.Compute/disks/azecommweb1-data01
+
+
+18. terraform import module.diskm2.azurerm_managed_disk.disk1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecomm-rg/providers/Microsoft.Compute/disks/azecommradmq1-data01
+
+19. terraform import module.diskm3.azurerm_managed_disk.disk1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecomm-rg/providers/Microsoft.Compute/disks/azecommpgdb1-data01
+
+
+
+
+20. terraform import module.diskm1.azurerm_virtual_machine_data_disk_attachment.vmdisk1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecomm-rg/providers/Microsoft.Compute/virtualMachines/azecommweb1/dataDisks/azecommweb1-data01
+
+21. terraform import module.diskm2.azurerm_virtual_machine_data_disk_attachment.vmdisk1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecomm-rg/providers/Microsoft.Compute/virtualMachines/azecommradmq1/dataDisks/azecommradmq1-data01 
+
+22. terraform import module.diskm3.azurerm_virtual_machine_data_disk_attachment.vmdisk1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecomm-rg/providers/Microsoft.Compute/virtualMachines/azecommpgdb1/dataDisks/azecommpgdb1-data01
+
+23. terraform import module.stgm1.azurerm_storage_account.stg1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecomm-rg/providers/Microsoft.Storage/storageAccounts/azecommdiag01
+
+24. terraform import module.stgm2.azurerm_storage_account.stg1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecomm-rg/providers/Microsoft.Storage/storageAccounts/azecommtfstate
+
+25. terraform import module.rgm2.azurerm_resource_group.rg1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecommdev-rg
+
+26. terraform import module.wvm1.azurerm_windows_virtual_machine.wvm1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecommdev-rg/providers/Microsoft.Compute/virtualMachines/azecommdevutl1
+
+27. terraform import module.nicm4.azurerm_network_interface.nic1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecommdev-rg/providers/Microsoft.Network/networkInterfaces/azecommdevutl1-nic01
+
+28. terraform import module.diskm4.azurerm_managed_disk.disk1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecommdev-rg/providers/Microsoft.Compute/disks/azecommdevutl1-data01
+
+29. terraform import module.diskm4.azurerm_virtual_machine_data_disk_attachment.vmdisk1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecommdev-rg/providers/Microsoft.Compute/virtualMachines/azecommdevutl1/dataDisks/azecommdevutl1-data01
+
+30. terraform import module.pipm2.azurerm_public_ip.public-ip1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecomm-rg/providers/Microsoft.Network/publicIPAddresses/azecommwaf1-publicip
+
+31. terraform import module.subnetm5.azurerm_subnet.subnet1 /subscriptions/a1cf932d-5f0a-44f7-bc1c-82117b43914a/resourceGroups/azecommvnet-rg/providers/Microsoft.Network/virtualNetworks/azecommvnet/subnets/waf
+
+
+
+
+
+
+
+
